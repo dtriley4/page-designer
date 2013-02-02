@@ -1,0 +1,294 @@
+body{
+  background: #f2f6f8;
+}
+
+.red{
+  background: red;
+}
+
+.blue{
+  background: blue;
+}
+
+.page-contain{
+  margin: 20px 0;
+  background: white;
+  min-height: 20px;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #D7DCDE;
+}
+
+.button{
+  display: block;
+  background:  #09c;
+}
+
+.helper-contain{
+  background:white;
+  position:fixed;
+  padding: 5px;
+  top:0;
+  right:0;
+  width:230px;
+  height:100%;
+  border: 1px solid black;
+  overflow:auto;
+}
+
+.layout{
+  min-height: 180px;
+}
+
+.drop-row{
+  min-height: 15px;
+}
+
+.drop-content{
+  min-height: 15px;
+}
+
+.drop-column{
+  min-width: 15px;
+  min-height: 15px;
+  border: 2px dashed #D7DCDE;;
+  float:left;
+}
+
+.page-contain .row{
+  margin:1em 0 1em;
+  position: relative;
+}
+
+.page-contain .columns{
+  margin:2em 0 1em;
+  position: relative;
+}
+
+.page-contain .content{
+  margin:2em 0 1em;
+  position: relative;
+}
+
+#created-row{
+  margin: 10px;
+}
+
+#created-content{
+  margin: 10px;
+}
+
+.page-contain .row-contain .editing .edit{
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  height: auto;
+}
+
+.editing .content{
+  display: none;
+}
+
+.edit{
+  display: none;
+}
+
+.moveable{
+  cursor: move;
+}
+
+.over{
+  border: 2px dashed #D7DCDE;
+  border-radius: 5px;
+}
+
+.hide{
+  display: none;
+}
+
+.activated-border{
+  border: 1px solid black;
+}
+
+#created-page:hover{
+  border: 2px dashed #D7DCDE;;
+}
+
+#created-row:hover{
+  border: 2px dashed #D7DCDE;;
+}
+
+#created-column:hover{
+  border: 2px dashed #D7DCDE;;
+}
+
+#created-content:hover{
+  border: 2px dashed #D7DCDE;;
+}
+
+.layout-type{
+  cursor: move;
+  margin: 5px 0;
+  background: #3D3D3D;
+  padding: 4px;
+}
+
+.widget-type{
+  cursor: move;
+}
+
+[htmlclass=content]{
+  float: left;
+}
+
+#activity-panel{
+  padding: 15px;
+  background: #323438;
+  text-align: center;
+  color:white;
+}
+
+#activity-panel #state-label h4{
+  font-size: 23px;
+  font-weight: 400;
+}
+
+#edit-form-container{
+  background: gray;
+  margin: 5px;
+  padding: 5px;
+}
+
+#toggle-left{
+  position: fixed;
+  top: 0px;
+  left: 230px;
+}
+
+#toggle-right{
+  position: fixed;
+  top: 0px;
+  right: 230px;
+}
+
+.toggle-left{
+  left: -230px;
+}
+
+.toggle-right{
+  right:-230px;
+}
+
+.green{
+  background: white;
+  border: 2px dashed #09C;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/*===============
+SideBar style
+===============*/
+  .sidebar-contain{
+    background:#43464A;
+    position:fixed;
+    top:0;
+    left:0;
+    width:230px;
+    height:100%;
+    overflow:auto;
+  }
+
+  ul.tabs-content{
+    width:90%;
+    margin:20px auto;
+    border-radius: 5px;
+  }
+
+  ul.accordion{
+    border-bottom: none;
+    border-radius: 5px;
+  }
+
+  ul.accordion > li{
+    padding: 0;
+    border-bottom: #323438 solid 1px;
+    border-top: none;
+  }
+
+  ul.accordion > li.active{
+    border:none;
+    background: #323438;
+    border-radius:5px;
+  }
+
+  ul.accordion > li.active .title{
+    background: white;
+    padding-top: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  ul.accordion > li.active .content{
+    background: #323438;
+    border:none;
+    border-radius: 5px;
+  }
+
+  ul.accordion > li.active .content h4 {
+    color: white;
+    font-size: 15px;
+    margin: 13px 0;
+    font-weight: 400;
+  }
+
+  ul.accordion > li.active .title h4{
+    color: #E54040;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  ul.accordion > li .title h4{
+    font-weight: 500;
+    font-size: 17px;
+    color:#fff;
+  }
+
+  ul.accordion > li.active .title::after{
+    border-color: #E54040 transparent transparent transparent;
+    top:18px;
+  }
+
+  ul.accordion > li .title::after{
+    top:14px;
+    border-color: transparent white transparent transparent;
+  }
+
+  ul.accordion > li.active .title::before{
+    display: none;
+  }
+
+  ul.accordion > li .title::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: #323438;
+    position: absolute;
+    right: 4px;
+    top: 7px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  ul.accordion > li .title{
+    border: none;
+    padding: 10px 20px;
+    background: #43464A;
+    border-left: none;
+    border-right: none;
+  }
